@@ -30,8 +30,8 @@ jobs:
       - name: Download Whisper model
         run: |
           mkdir -p app/src/main/assets/models/whisper
-          curl -L -o app/src/main/assets/models/whisper/ggml-small.en-q8_0.bin \
-            "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.en-q8_0.bin"
+          curl -L -o app/src/main/assets/models/whisper/ggml-base.en-q8_0.bin \
+            "https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.en-q8_0.bin"
 
       - name: Make gradlew executable
         run: chmod +x gradlew
