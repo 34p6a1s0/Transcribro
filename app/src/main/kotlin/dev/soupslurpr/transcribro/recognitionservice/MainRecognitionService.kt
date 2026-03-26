@@ -67,7 +67,7 @@ class MainRecognitionService : RecognitionService() {
                     override fun getWhisperContext(): WhisperContext {
                         return WhisperContext.createContextFromAsset(
                             application.assets,
-                            "models/whisper/ggml-small.en-q8_0.bin"
+                            "models/whisper/ggml-base.en-q8_0.bin"
                         )
                     }
                 },
