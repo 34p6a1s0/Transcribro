@@ -46,6 +46,7 @@ android {
     androidResources {
         generateLocaleConfig = true
         localeFilters += listOf("en")
+        noCompress += listOf("bin")
     }
     buildTypes {
         release {
